@@ -42,7 +42,6 @@ body {
 .container {
   float: left;
   width: 100%;
-  padding: 40px;
 }
 
 .container .studentTable {
@@ -51,16 +50,46 @@ body {
   margin-bottom: 30px;
 }
 
-.container .addNewLineBtn {
-  float: left;
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
 }
 
-.container .addNewLineBtn button {
+.container .header .headText {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+}
+
+.container .header .addNewLineBtn {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+}
+
+.container .header .addNewLineBtn button {
   float: left;
   width: auto;
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 
 .container .vs-input, .container .vs-table__th__content {
@@ -69,10 +98,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.container .vs-table table {
-  overflow: hidden;
 }
 
 .container .container .vs-input, .container .container .vs-table__th__content {
@@ -181,4 +206,97 @@ body {
 
 .container .colCenter {
   text-align: center;
+}
+
+.container .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .login .vs-input-parent {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.container .login form {
+  float: left;
+  width: 100%;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+}
+
+.container .login .headText {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.container .login .vs-alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px !important;
+  margin-top: 20px;
+}
+
+.container .login .vs-alert .vs-alert__title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+}
+
+.container .login .vs-alert .vs-alert__content {
+  display: none;
+}
+
+.container .login .signIn {
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.container .login .signIn svg {
+  margin-right: 5px;
+}
+
+.container .layout {
+  float: left;
+  width: 100%;
+  padding: 30px;
 }
