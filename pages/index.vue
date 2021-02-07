@@ -183,10 +183,10 @@ export default {
       this.loginVisible = false;
     },
     login() {
-      if(this.username == 'cky' && this.password == '848722') {
+      if(this.username == 'cky' && this.password == '8784') {
         localStorage.setItem('loginVisible', true);
         this.loginVisible = true;
-      }  else {
+      } else {
         this.loginError = true;
       }
     },

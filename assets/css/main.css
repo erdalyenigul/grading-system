@@ -300,3 +300,24 @@ body {
   width: 100%;
   padding: 30px;
 }
+
+@media (max-width: 767px) {
+  .container .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .header .addNewLineBtn {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .container .header .headText {
+    margin-bottom: 10px;
+  }
+  .vs-table table {
+    width: 1000px;
+  }
+}
