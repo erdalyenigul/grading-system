@@ -1,0 +1,55 @@
+$fontStack : 'Poppins', sans-serif;
+$boxShadow : 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+$color1 : #333;
+$color2 : #777;
+
+
+strong{font-weight: 600;}
+a{text-decoration: none;
+  &:hover{text-decoration:none;}
+}
+* {box-sizing: border-box; transition: all .3s ease; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+::after, ::before {box-sizing: border-box;}
+body{font-family: $fontStack; font-size:14px; font-weight: 400; line-height: 1.5; color:#707070; text-align: left; background-color: #f1f1f1;}
+
+.containerAll{float:left; width:100%;}
+.container{float:left; width:100%; padding:40px;
+  .studentTable{float:left; width:100%; margin-bottom:30px;}
+  .addNewLineBtn{float:left; width:100%;
+    button{float:left; width:auto; margin-right:20px; margin-bottom:20px;}
+  }
+  .vs-input, .vs-table__th__content{width:100%!important; text-align:center; justify-content: center;}
+  .vs-table table{overflow:hidden;}
+  .container .vs-input, .container .vs-table__th__content{background-color: #fff; border: 1px solid #f1f1f1;}
+  .midTermPercentDefault, .finalTermPercentDefault{width:50px;}
+  .vs-table__tr{font-weight:600;}
+  .vs-table__tr{
+    .vs-table__th:nth-child(1){width:10%!important;}
+    .vs-table__th:nth-child(2), .vs-table__td:nth-child(2){width:30%!important;
+      .vs-input{text-align:left; justify-content:flex-start;}
+      .vs-table__th__content{padding-left:10px; justify-content:flex-start;}
+    }
+    .vs-table__th:nth-child(3){width:10%!important;}
+    .vs-table__th:nth-child(4){width:10%!important;
+      .vs-input-content{margin-left:5px;}
+      .vs-input__label{left:4px;}
+      .vs-input{padding: 5px 2px;}
+      .vs-input:focus{padding-left:0!important;}
+    }
+    .vs-table__th:nth-child(5){width:10%!important;}
+    .vs-table__th:nth-child(6){width:10%!important;
+      .vs-input-content{margin-left:5px;}
+      .vs-input__label{left:4px;}
+      .vs-input{padding: 5px 2px;}
+      .vs-input:focus{padding-left:0!important;}
+    }
+    .vs-table__th:nth-child(7){width:10%!important;}
+    .vs-table__th:nth-child(8){width:10%!important;}
+    &:hover{
+      .vs-table__td{background-color:#ececec!important}
+    }
+  }
+  .vs-input{background-color:#fff;}
+  .vs-input:focus{padding-left:10px!important; background-color:#fff!important;}
+  .colCenter{text-align:center;}
+}
