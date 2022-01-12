@@ -69,11 +69,15 @@
               <vs-td><vs-input v-model="student.no" placeholder="Öğrenci No" /></vs-td>
               <vs-td><vs-input v-model="student.nameSurname" placeholder="İsim Soyisim" /></vs-td>
               <vs-td><vs-input v-model="student.midTerm" placeholder="Vize Notu" /></vs-td>
-              <vs-td class="colCenter"> {{ student.midTermPercent = (student.midTerm / 100) * midTermPercentDefault }}</vs-td>
+              <vs-td class="colCenter"> 
+                {{ student.midTermPercent = ((student.midTerm / 100) * midTermPercentDefault).toFixed(1) }}
+              </vs-td>
               <vs-td><vs-input v-model="student.finalExam" placeholder="Final Notu" /></vs-td>
-              <vs-td class="colCenter"> {{ student.finalExamPercent = (student.finalExam / 100) * finalTermPercentDefault }}</vs-td>
+              <vs-td class="colCenter"> 
+                {{ student.finalExamPercent = ((student.finalExam / 100) * finalTermPercentDefault).toFixed(1) }}
+              </vs-td>
               <vs-td class="colCenter">
-                {{ student.finalScore = ((student.midTerm / 100) * midTermPercentDefault) + (student.finalExam / 100) * finalTermPercentDefault }}
+                {{ student.finalScore = (((student.midTerm / 100) * midTermPercentDefault) + (student.finalExam / 100) * finalTermPercentDefault).toFixed(1) }}
               </vs-td>
               <vs-td class="colCenter">
                 <span v-if="
